@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Extra -->
+  <title>Tasty Food's Argentina - Comidas y Postres</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <!-- HEADER SECTION START -->
+  <header id="header">
+    <nav class="navbar">
+      <div class="navbar__mobile-container">
+        <div class="navbar-mobile">
+          <h1><a href="#">TASTY <span>FOOD'S</span></a></h1>
+          <i class="fa-solid fa-bars hamburger"></i>
+        </div>
+        <ul class="navbar__ul hidden">
+          <li class="navbar__li"><a
+              href="https://wa.me/541134088788/?text=Hola!%20Quisiera%20ordenar%20algo,%20¿Pueden%20tomar%20mi%20pedido?"
+              target="_BLANK">¡Ordenar ahora!</a></li>
+          <li class="navbar__li"><a href="#menu">Ver Menú</a></li>
+          <li class="navbar__li"><a href="#map">Donde estamos</a></li>
+          <li class="navbar__li"><a href="#newsletter">Newsletter</a></li>
+          <li class="navbar__li"><a href="#why-us">¿Por qué elegir Tastyfood?</a></li>
+          <li class="navbar__li about-us-show-btn"><a href="#">Sobre Nosotros</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <!-- HEADER SECTION END -->
+  <main>
+    <!-- HERO SECTION START -->
+    <section id="hero">
+      <div class="hero__container">
+        <h2 class="hero__title">¡Bienvenido! ¿Qué vas a pedir hoy?</h2>
+        <div class="hero__offers-container">
+          <!-- Dishes Container Start-->
+          <div class="hero__dishes-container">
+            <h3 class="hero__subtitle">Nuestro Menú del dia</h3>
+            <section class="carousel dishes-carousel">
+              <div class="slider">
+                <!-- Controllers Start -->
+                <input type="radio" name="radio-btn" id="dishes-radio1" class="slide-controller">
+                <input type="radio" name="radio-btn" id="dishes-radio2" class="slide-controller">
+                <input type="radio" name="radio-btn" id="dishes-radio3" class="slide-controller">
+                <!-- Controllers End -->
+                <!-- Slides Start -->
+                <div class="slide first">
+                  <div class="slide__title-container">
+                    <h3 class="slide__title">Porciones de Muzarella Grande</h3>
+                  </div>
+                  <img class="slide__img" src="/img/pizza.png">
+                </div>
+                <div class="slide">
+                  <div class="slide__title-container">
+                    <h3 class="slide__title">Hamburguesa Completa Tasty - Deluxe Edition</h3>
+                  </div>
+                  <img class="slide__img" src="/img/hamburger-ready-pexels.jpg">
+                </div>
+                <div class="slide">
+                  <div class="slide__title-container">
+                    <h3 class="slide__title">Porciones de Muzarella Grande</h3>
+                  </div>
+                  <img class="slide__img" src="/img/pizza.png">
+                </div>
+                <!-- Slides End -->
+              </div>
+              <!-- Manual Navigation Start -->
+              <div class="manual-nav">
+                <label for="dishes-radio1" class="manual-nav__btn"></label>
+                <label for="dishes-radio2" class="manual-nav__btn"></label>
+                <label for="dishes-radio3" class="manual-nav__btn"></label>
+              </div>
+              <!-- Manual Navigation End -->
+            </section>
+            <button class="call-to-action-btn">¡VER MÁS PLATOS!</button>
+          </div>
+          <!-- Dishes Container End -->
+          <!-- Desserts Container Start -->
+          <div class="hero__desserts-container">
+            <h3 class="hero__subtitle">Nuestros postres del dia</h3>
+            <section class="carousel desserts-carousel">
+              <div class="slider">
+                <!-- Controllers Start -->
+                <input type="radio" name="desserts-radio-btn" id="desserts-radio1" class="slide-controller">
+                <input type="radio" name="desserts-radio-btn" id="desserts-radio2" class="slide-controller">
+                <input type="radio" name="desserts-radio-btn" id="desserts-radio3" class="slide-controller">
+                <!-- Controllers End -->
+                <!-- Slides Start -->
+                <div class="slide first">
+                  <div class="slide__title-container">
+                    <h3 class="slide__title">Bochas de Helado</h3>
+                  </div>
+                  <img class="slide__img" src="/img/ice-cream.jpg">
+                </div>
+                <div class="slide">
+                  <div class="slide__title-container">
+                    <h3 class="slide__title">Chocolates Gourmet</h3>
+                  </div>
+                  <img class="slide__img" src="/img/chocolate.jpg">
+                </div>
+                <div class="slide">
+                  <div class="slide__title-container">
+                    <h3 class="slide__title">Waffles Tentación</h3>
+                  </div>
+                  <img class="slide__img" src="/img/dessert-pexels.jpg">
+                </div>
+                <!-- Slides End -->
+              </div>
+              <!-- Manual Navigation Start -->
+              <div class="manual-nav">
+                <label for="desserts-radio1" class="manual-nav__btn"></label>
+                <label for="desserts-radio2" class="manual-nav__btn"></label>
+                <label for="desserts-radio3" class="manual-nav__btn"></label>
+              </div>
+              <!-- Manual Navigation End -->
+            </section>
+            <button class="call-to-action-btn desserts-btn">¡VER MAS POSTRES!</button>
+          </div>
+          <!-- Desserts Container End -->
+        </div>
+        <h3 class="hero__subtitle bottom-subtitle">¿Ya sabés qué pedir? ¡Envianos tu pedido!</h3>
+        <h3 class="whatsapp-btn">
+          <a href="https://wa.me/541134088788/?text=Hola!%20Quisiera%20ordenar%20algo,%20¿Pueden%20tomar%20mi%20pedido?"
+            target="_BLANK">+11 3408-8788<img src="/img/social/whatsapp_logo.png" alt="whatsapp"></a>
+        </h3>
+        <h3 class="hero__subtitle bottom-subtitle">¿Qué esperás?</h3>
+      </div>
+    </section>
+    <!-- HERO SECTION END -->
+    <!-- WHY US SECTION START -->
+    <section id="why-us">
+      <div class="why-us__title-content">
+        <div class="why-us__title-container">
+          <h2 class="why-us__title">¿Por qué elegir Tastyfood?</h2>
+          <p class="why-us__title-description">Nuestro servicio combina <span>4 factores clave</span> los
+            cuales creemos son los
+            pilares
+            de un buen servicio como
+            restaurante.
+          </p>
+        </div>
+        <div class="why-us__banner-container">
+          <img class="why-us__banner" src="/img/menu-sheet.png">
+        </div>
+      </div>
+      <ul class="why-us__items-container">
+        <li class="why-us__item">
+          <h3 class="why-us__item-title">VELOCIDAD</h3>
+          <i class="fa-solid fa-bolt-lightning why-us__bolt-icon"></i>
+          <p class="why-us__item-description">Tanto en la atencion al cliente, como en preparación de su pedido y el
+            posterior envío.</p>
+        </li>
+        <li class="why-us__item">
+          <h3 class="why-us__item-title">CALIDAD</h3>
+          <i class="fa-solid fa-face-smile"></i>
+          <p class="why-us__item-description">Tanto en la cuidadosa
+            selección de los ingredientes que usamos, como en los precios razonables y la atencion al cliente.</p>
+        </li>
+        <li class="why-us__item">
+          <h3 class="why-us__item-title">EXPERIENCIA</h3>
+          <i class="fa-solid fa-truck-fast"></i>
+          <p class="why-us__item-description">Creemos que el cliente debe sentirse complacido con nuestro servicio tanto
+            en nuestro
+            restaurante
+            como en su casa, por lo que contamos con un eficiente sistema de Delivery y un cuidadoso empaquetado de
+            productos.
+          </p>
+        </li>
+        <li class="why-us__item">
+          <h3 class="why-us__item-title">COMPROMISO</h3>
+          <i class="fa-solid fa-user-check"></i></i>
+          <p class="why-us__item-description">Para brindar un mejor servicio, estamos revisando y mejorando
+            constantemente nuestra metodología.</p>
+        </li>
+      </ul>
+    </section>
+    <!-- WHY US SECTION END -->
+    <!-- MENU SECTION START -->
+    <section id="menu">
+      <h2 class="menu__title">Menú</h2>
+      <div class="menu__selector">
+        <label for="categories">Categorias:</label>
+        <select name="categories" id="categories">
+          <option value="desayunos">Desayunos</option>
+          <option value="platos">Platos</option>
+          <option value="meriendas">Meriendas</option>
+          <option value="postres">Postres</option>
+        </select>
+      </div>
+      <div class="menu__filter-btn-container">
+        <button id="menu__filter-btn">Ver opciones</button>
+      </div>
+      <div class="grid food-category" id="desayunos">
+        <div class="grid__item">
+          <div class="grid__img-container">
+            <img class="grid__img" src="/img/donuts.jpg" alt="">
+          </div>
+          <div class="grid__info">
+            <h3 class="grid__info-title">product_name</h3>
+            <h4 class="grid__info-price">product_price</h4>
+            <p class="grid__info-description">product_description</p>
+          </div>
+        </div>
+      </div>
+      <div class="grid food-category hidden" id="platos">
+        <div class="grid__item">
+          <div class="grid__img-container">
+            <img class="grid__img" src="/img/pizza.png" alt="">
+          </div>
+          <div class="grid__info">
+            <h3 class="grid__info-title">product_name</h3>
+            <h4 class="grid__info-price">product_price</h4>
+            <p class="grid__info-description">product_description</p>
+          </div>
+        </div>
+      </div>
+      <div class="grid food-category hidden" id="meriendas">
+        <div class="grid__item">
+          <div class="grid__img-container">
+            <img class="grid__img" src="/img/dessert-pexels.jpg" alt="">
+          </div>
+          <div class="grid__info">
+            <h3 class="grid__info-title">product_name</h3>
+            <h4 class="grid__info-price">product_price</h4>
+            <p class="grid__info-description">product_description</p>
+          </div>
+        </div>
+      </div>
+      <div class="grid food-category hidden" id="postres">
+        <div class="grid__item">
+          <div class="grid__img-container">
+            <img class="grid__img" src="/img/ice-cream.jpg" alt="">
+          </div>
+          <div class="grid__info">
+            <h3 class="grid__info-title">product_name</h3>
+            <h4 class="grid__info-price">product_price</h4>
+            <p class="grid__info-description">product_description</p>
+          </div>
+        </div>
+      </div>
+      <h3 class="whatsapp-btn">
+        <a href="https://wa.me/541134088788/?text=Hola!%20Quisiera%20ordenar%20algo,%20¿Pueden%20tomar%20mi%20pedido?"
+          target="_BLANK">¡Ordenar ahora!<img src="/img/social/whatsapp_logo.png" alt="whatsapp"></a>
+      </h3>
+    </section>
+    <!-- MENU SECTION END -->
+    <!-- MAP SECTION START -->
+    <section id="map">
+      <h3 class="map__title">Dónde estamos</h3>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.016887889456!2d-58.38375908425713!3d-34.603734465007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4aa9f0a6da5edb%3A0x11bead4e234e558b!2sObelisco!5e0!3m2!1ses-419!2sar!4v1652740338184!5m2!1ses-419!2sar"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade" id="map_iframe"></iframe>
+      <div class="map__description-wrapper">
+        <p class="map__description">Horarios: Lunes a Sabados de 8:00 a 23:00</p>
+        <p class="map__description">Delivery: Lunes a Sabados de 12:00 a 16:00 y de 20:00 a 23:00</p>
+      </div>
+    </section>
+    <!-- MAP SECTION END -->
+    <!-- NEWSLETTER SECTION START -->
+    <section id="newsletter">
+      <div class="newsletter__titles-wrapper">
+        <h3 class="newsletter__title">¡Aprovechá un descuento del <span>25% + Delivery sin cargo</span>!</h3>
+        <p class="newsletter__title">Suscribiéndote a nuestro <span>Newsletter</span>, te damos un
+          cupon de 25% de descuento en tu primer pedido de CADA MES + ENVIO GRATIS!! Además vas a estar al tanto de
+          las ultimas ofertas
+          y
+          novedades que tenemos para vos :) </p>
+        <h3 class="newsletter__title">No te lo pierdas!!!</h3>
+      </div>
+      <!-- Form start -->
+      <form action="validateForm" id="form" method="POST">
+        <div class="form__item form__firstname">
+          <label for="firstname" class="label">Nombre</label>
+          <input type="text" name="firstname" class="form__input" required>
+        </div>
+        <div class="form__item form__surname">
+          <label for="surname" class="label">Apellido</label>
+          <input type="text" name="surname" class="form__input">
+        </div>
+        <div class="form__item form__email">
+          <label for="email" class="label">Email</label>
+          <input type="email" name="email" class="form__input" required>
+        </div>
+        <div class="form__item form__favourite-food">
+          <label for="favourite-food" class="label">¿Cuál es tu comida favorita?</label>
+          <input type="text" name="favourite_food" class="form__input">
+        </div>
+        <div class="form__item form__checkboxes">
+          <label for="tyc" class="checkbox-label"><input class="form__checkbox" type="checkbox" name="tyc"
+              value="tyc_accepted" checked required>Acepto los terminos y
+            condiciones.</label>
+          <label for="email_marketing" class="checkbox-label"><input class="form__checkbox" type="checkbox"
+              name="email_marketing" value="email_marketing_accepted">Acepto
+            recibir ofertas y descuentos
+            increíbles a mi email.</label>
+        </div>
+        <div class="form__item form__submit">
+          <input type="submit" id="submit-register-btn" value="¡Suscribirse!">
+        </div>
+      </form>
+    </section>
+    <!-- NEWSLETTER SECTION END -->
+    <!-- FOOTER SECTION START -->
+    <footer id="footer">
+      <div class="social">
+        <h3 class="social__title">¿Qué esperás? ¡Mandanos tu pedido ahora!</h3>
+        <h3 class="whatsapp-btn">
+          <a href="https://wa.me/541134088788/?text=Hola!%20Quisiera%20ordenar%20algo,%20¿Pueden%20tomar%20mi%20pedido?"
+            target="_BLANK">+11 3408-8788<img src="/img/social/whatsapp_logo.png" alt="whatsapp"></a>
+        </h3>
+        <h3 class="social__title">- Nuestras redes sociales -</h3>
+        <ul class="social-networks">
+          <li class="social-network-item"><a href="#"><img class="social-network-img"
+                src="/img/social/instagram_logo.png" alt="instagram"></a></li>
+          <li class="social-network-item"><a href="#"><img class="social-network-img" src="/img/social/tiktok_logo.png"
+                alt="tiktok"></a></li>
+          <li class="social-network-item"><a href="#"><img class="social-network-img" src="/img/social/youtube_logo.png"
+                alt="youtube"></a></li>
+          <li class="social-network-item"><a href="#"><img class="social-network-img"
+                src="/img/social/facebook_logo.png" alt="facebook"></a></li>
+        </ul>
+      </div>
+      <div class="footer-menu social-links">
+        <ul class="footer-menu__items">
+          <li class="footer-menu__item"><a href="#">Instagram <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </li>
+          <li class="footer-menu__item"><a href="#">YouTube <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </li>
+          <li class="footer-menu__item"><a href="#">TikTok <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </li>
+          <li class="footer-menu__item"><a href="#">Facebook <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-menu">
+        <ul class="footer-menu__items">
+          <li class="footer-menu__item"><a href="#menu">Ver Menú <i
+                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </li>
+          <li class="footer-menu__item"><a href="#newsletter">Newsletter <i
+                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </li>
+          <li class="footer-menu__item"><a href="#map">Donde Estamos <i
+                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </li>
+          <li class="footer-menu__item"><a href="#why-us">Por qué elegirnos <i
+                class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
+        </ul>
+      </div>
+      <p class="footer__owner-p">© Copyright 2022 - Creado por <span>Nicolas Vargas</span></p>
+    </footer>
+    <!-- FOOTER SECTION END -->
+    <!-- ABOUT US SECTION START -->
+    <section id="about-us" class="hidden">
+      <div class="about-us-close-btn-container">
+        <button class="about-us-close-btn">Volver</button>
+      </div>
+      <h3 class="about-us__title">Sobre Nosotros</h3>
+      <p class="about-us__p">
+        <img src="/img/tastyfood-crew.jpg" alt="" class="about-us__img">Desde nuestros inicios en el año 1995 lorem
+        ipsum dolor sit amet consectetur
+        adipisicing elit. Commodi, laborum laudantium.
+        Veniam, consectetur sit
+        aut molestias atque dignissimos sequi, dolorem tempore animi repellendus distinctio beatae ratione, voluptates
+        laborum sed voluptatum quo debitis magni officia aliquid! Temporibus alias atque libero provident nesciunt id
+        reprehenderit nobis voluptatibus at! Illum ullam sed dicta fugit perferendis? Molestias laborum magnam incidunt
+        repudiandae voluptatum voluptatem facilis facere natus quam ullam minima minus voluptas doloremque recusandae,
+        sequi tenetur. Soluta quo facere odio architecto tempora tempore rerum velit praesentium maiores dolorem minus
+        voluptatum cumque, laudantium quae asperiores aperiam assumenda iure natus a sequi temporibus vel explicabo
+        voluptate. Dolore.
+      </p>
+      <div class="about-us-close-btn-container">
+        <button class="about-us-close-btn">Volver</button>
+      </div>
+    </section>
+    <!-- ABOUT US SECTION END -->
+  </main>
+  <script src="main.js"></script>
+</body>
+
+</html>

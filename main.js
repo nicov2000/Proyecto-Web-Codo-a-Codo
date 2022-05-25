@@ -22,13 +22,20 @@ function toggleMobileMenu(){
 
 // About Us Section Toggle
 const aboutUsSection = document.querySelector("#about-us");
-const aboutUsOpenBtn = document.querySelector(".about-us-show-btn");
+
+const aboutUsOpenBtns = Array.from(document.querySelectorAll(".about-us-open-btn"));
 const aboutUsCloseBtns = Array.from(document.querySelectorAll(".about-us-close-btn"));
 
-aboutUsOpenBtn.onclick = () => aboutUsSection.classList.toggle("hidden", false);
+aboutUsOpenBtns.forEach(button => 
+  button.onclick = () => {
+    aboutUsSection.classList.toggle("hidden", false);
+  }
+);
 
 aboutUsCloseBtns.forEach(button => 
-	button.onclick = () => {aboutUsSection.classList.toggle("hidden", true)}
+	button.onclick = () => {
+    aboutUsSection.classList.toggle("hidden", true);
+  }
 );
 
 // Menu Selector
@@ -49,17 +56,6 @@ categoryFilterBtn.onclick = click => {
     };
   })
 }
-
-
-
-
-
-
-
-
-
-
-
 
 // Form Validation
 const form = document.querySelector("#form");
@@ -100,6 +96,18 @@ function validateForm() {
   // Formulario funcionando correctamente. Al enviar los datos se previene la conducta normal (enviar el formulario) y primero pasa por una funcion de validacion, para despues enviar (0 no) los datos, segun los criterios que deben cumplirse.
 }
 
+
+
+const menuSection = document.querySelector("#menu");
+const menuWhatsappBtn = document.querySelector("#menu .whatsapp-btn")
+
+document.addEventListener("scroll", () => {
+  const headerHeightOffset = document.querySelector("header").scrollHeight;
+
+  if((window.scrollY + headerHeightOffset) >= menuSection.offsetTop || 
+  menuSection.scrollHeight <= window.innerHeight) menuWhatsappBtn.classList.toggle("show", true);
+  else menuWhatsappBtn.classList.toggle("show", false);
+});
 
 
 

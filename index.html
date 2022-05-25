@@ -23,9 +23,10 @@
   <!-- HEADER SECTION START -->
   <header id="header">
     <nav class="navbar">
+      <!-- Mobile Navbar -->
       <div class="navbar__mobile-container">
         <div class="navbar-mobile">
-          <h1><a href="#">TASTY <span>FOOD'S</span></a></h1>
+          <h1 class="tastyfood-logo"><a href="#">TASTY <span>FOOD'S</span></a></h1>
           <i class="fa-solid fa-bars hamburger"></i>
         </div>
         <ul class="navbar__ul hidden">
@@ -36,7 +37,20 @@
           <li class="navbar__li"><a href="#map">Donde estamos</a></li>
           <li class="navbar__li"><a href="#newsletter">Newsletter</a></li>
           <li class="navbar__li"><a href="#why-us">¿Por qué elegir Tastyfood?</a></li>
-          <li class="navbar__li about-us-show-btn"><a href="#">Sobre Nosotros</a></li>
+          <li class="navbar__li about-us-open-btn"><a href="#">Sobre Nosotros</a></li>
+        </ul>
+      </div>
+      <!-- Desktop Navbar -->
+      <div class="navbar__desktop-container">
+        <h1 class="tastyfood-logo"><a href="#">TASTY <span>FOOD'S</span></a></h1>
+        <ul class="navbar__desktop-ul">
+          <li class="navbar__desktop-li"><a
+              href="https://wa.me/541134088788/?text=Hola!%20Quisiera%20ordenar%20algo,%20¿Pueden%20tomar%20mi%20pedido?"
+              target="_BLANK">¡Ordenar ahora!</a></li>
+          <li class="navbar__desktop-li"><a href="#menu">Menú</a></li>
+          <li class="navbar__desktop-li"><a href="#map">Donde estamos</a></li>
+          <li class="navbar__desktop-li"><a href="#newsletter">Newsletter</a></li>
+          <li class="navbar__desktop-li about-us-open-btn"><a href="#about-us">Sobre Nosotros</a></li>
         </ul>
       </div>
     </nav>
@@ -62,18 +76,30 @@
                 <div class="slide first">
                   <div class="slide__title-container">
                     <h3 class="slide__title">Porciones de Muzarella Grande</h3>
+                    <div class="slide__content">
+                      <h4 class="product-price daily-offer">product_price</h4>
+                      <p class="product-description daily-offer">product_description</p>
+                    </div>
                   </div>
                   <img class="slide__img" src="/img/pizza.png">
                 </div>
                 <div class="slide">
                   <div class="slide__title-container">
-                    <h3 class="slide__title">Hamburguesa Completa Tasty - Deluxe Edition</h3>
+                    <h3 class="slide__title">Hamburguesa Completa Tasty Deluxe Edition</h3>
+                    <div class="slide__content">
+                      <h4 class="product-price daily-offer">product_price</h4>
+                      <p class="product-description daily-offer">product_description</p>
+                    </div>
                   </div>
                   <img class="slide__img" src="/img/hamburger-ready-pexels.jpg">
                 </div>
                 <div class="slide">
                   <div class="slide__title-container">
                     <h3 class="slide__title">Porciones de Muzarella Grande</h3>
+                    <div class="slide__content">
+                      <h4 class="product-price daily-offer">product_price</h4>
+                      <p class="product-description daily-offer">product_description</p>
+                    </div>
                   </div>
                   <img class="slide__img" src="/img/pizza.png">
                 </div>
@@ -87,7 +113,7 @@
               </div>
               <!-- Manual Navigation End -->
             </section>
-            <button class="call-to-action-btn">¡VER MÁS PLATOS!</button>
+            <a href="#menu" class="call-to-action-btn">¡VER MAS!</a>
           </div>
           <!-- Dishes Container End -->
           <!-- Desserts Container Start -->
@@ -104,18 +130,30 @@
                 <div class="slide first">
                   <div class="slide__title-container">
                     <h3 class="slide__title">Bochas de Helado</h3>
+                    <div class="slide__content">
+                      <h4 class="product-price daily-offer">product_price</h4>
+                      <p class="product-description daily-offer">product_description</p>
+                    </div>
                   </div>
                   <img class="slide__img" src="/img/ice-cream.jpg">
                 </div>
                 <div class="slide">
                   <div class="slide__title-container">
                     <h3 class="slide__title">Chocolates Gourmet</h3>
+                    <div class="slide__content">
+                      <h4 class="product-price daily-offer">product_price</h4>
+                      <p class="product-description daily-offer">product_description</p>
+                    </div>
                   </div>
                   <img class="slide__img" src="/img/chocolate.jpg">
                 </div>
                 <div class="slide">
                   <div class="slide__title-container">
                     <h3 class="slide__title">Waffles Tentación</h3>
+                    <div class="slide__content">
+                      <h4 class="product-price daily-offer">product_price</h4>
+                      <p class="product-description daily-offer">product_description</p>
+                    </div>
                   </div>
                   <img class="slide__img" src="/img/dessert-pexels.jpg">
                 </div>
@@ -129,14 +167,14 @@
               </div>
               <!-- Manual Navigation End -->
             </section>
-            <button class="call-to-action-btn desserts-btn">¡VER MAS POSTRES!</button>
+            <a href="#menu" class="call-to-action-btn desserts-btn">¡VER MAS!</a>
           </div>
           <!-- Desserts Container End -->
         </div>
         <h3 class="hero__subtitle bottom-subtitle">¿Ya sabés qué pedir? ¡Envianos tu pedido!</h3>
         <h3 class="whatsapp-btn">
           <a href="https://wa.me/541134088788/?text=Hola!%20Quisiera%20ordenar%20algo,%20¿Pueden%20tomar%20mi%20pedido?"
-            target="_BLANK">+11 3408-8788<img src="/img/social/whatsapp_logo.png" alt="whatsapp"></a>
+            target="_BLANK">Pedir por Whatsapp<img src="/img/social/whatsapp_logo.png" alt="whatsapp"></a>
         </h3>
         <h3 class="hero__subtitle bottom-subtitle">¿Qué esperás?</h3>
       </div>
@@ -158,10 +196,11 @@
           <img class="why-us__banner" src="/img/menu-sheet.png">
         </div>
       </div>
+      <img class="why-us__sideimage" src="/img/dishes-menu-pexels.jpg" alt="why tastyfood">
       <ul class="why-us__items-container">
         <li class="why-us__item">
           <h3 class="why-us__item-title">VELOCIDAD</h3>
-          <i class="fa-solid fa-bolt-lightning why-us__bolt-icon"></i>
+          <i class="fa-solid fa-bolt-lightning"></i>
           <p class="why-us__item-description">Tanto en la atencion al cliente, como en preparación de su pedido y el
             posterior envío.</p>
         </li>
@@ -195,15 +234,17 @@
       <h2 class="menu__title">Menú</h2>
       <div class="menu__selector">
         <label for="categories">Categorias:</label>
-        <select name="categories" id="categories">
-          <option value="desayunos">Desayunos</option>
-          <option value="platos">Platos</option>
-          <option value="meriendas">Meriendas</option>
-          <option value="postres">Postres</option>
-        </select>
-      </div>
-      <div class="menu__filter-btn-container">
-        <button id="menu__filter-btn">Ver opciones</button>
+        <div class="menu__selector-content">
+          <select name="categories" id="categories">
+            <option value="desayunos">Desayunos</option>
+            <option value="platos">Platos</option>
+            <option value="meriendas">Meriendas</option>
+            <option value="postres">Postres</option>
+          </select>
+          <div class="menu__filter-btn-container">
+            <button id="menu__filter-btn">Ver opciones</button>
+          </div>
+        </div>
       </div>
       <div class="grid food-category" id="desayunos">
         <div class="grid__item">
@@ -211,9 +252,39 @@
             <img class="grid__img" src="/img/donuts.jpg" alt="">
           </div>
           <div class="grid__info">
-            <h3 class="grid__info-title">product_name</h3>
-            <h4 class="grid__info-price">product_price</h4>
-            <p class="grid__info-description">product_description</p>
+            <h3 class="grid__info-title product-title">product_name</h3>
+            <h4 class="grid__info-price product-price">product_price</h4>
+            <p class="grid__info-description product-description">product_description</p>
+          </div>
+        </div>
+        <div class="grid__item">
+          <div class="grid__img-container">
+            <img class="grid__img" src="/img/donuts.jpg" alt="">
+          </div>
+          <div class="grid__info">
+            <h3 class="grid__info-title product-title">product_name</h3>
+            <h4 class="grid__info-price product-price">product_price</h4>
+            <p class="grid__info-description product-description">product_description</p>
+          </div>
+        </div>
+        <div class="grid__item">
+          <div class="grid__img-container">
+            <img class="grid__img" src="/img/donuts.jpg" alt="">
+          </div>
+          <div class="grid__info">
+            <h3 class="grid__info-title product-title">product_name</h3>
+            <h4 class="grid__info-price product-price">product_price</h4>
+            <p class="grid__info-description product-description">product_description</p>
+          </div>
+        </div>
+        <div class="grid__item">
+          <div class="grid__img-container">
+            <img class="grid__img" src="/img/donuts.jpg" alt="">
+          </div>
+          <div class="grid__info">
+            <h3 class="grid__info-title product-title">product_name</h3>
+            <h4 class="grid__info-price product-price">product_price</h4>
+            <p class="grid__info-description product-description">product_description</p>
           </div>
         </div>
       </div>
@@ -223,9 +294,89 @@
             <img class="grid__img" src="/img/pizza.png" alt="">
           </div>
           <div class="grid__info">
-            <h3 class="grid__info-title">product_name</h3>
-            <h4 class="grid__info-price">product_price</h4>
-            <p class="grid__info-description">product_description</p>
+            <h3 class="grid__info-title product-title">product_name</h3>
+            <h4 class="grid__info-price product-price">product_price</h4>
+            <p class="grid__info-description product-description">product_description</p>
+          </div>
+        </div>
+        <div class="grid__item">
+          <div class="grid__img-container">
+            <img class="grid__img" src="/img/pizza.png" alt="">
+          </div>
+          <div class="grid__info">
+            <h3 class="grid__info-title product-title">product_name</h3>
+            <h4 class="grid__info-price product-price">product_price</h4>
+            <p class="grid__info-description product-description">product_description</p>
+          </div>
+        </div>
+        <div class="grid__item">
+          <div class="grid__img-container">
+            <img class="grid__img" src="/img/pizza.png" alt="">
+          </div>
+          <div class="grid__info">
+            <h3 class="grid__info-title product-title">product_name</h3>
+            <h4 class="grid__info-price product-price">product_price</h4>
+            <p class="grid__info-description product-description">product_description</p>
+          </div>
+        </div>
+        <div class="grid__item">
+          <div class="grid__img-container">
+            <img class="grid__img" src="/img/pizza.png" alt="">
+          </div>
+          <div class="grid__info">
+            <h3 class="grid__info-title product-title">product_name</h3>
+            <h4 class="grid__info-price product-price">product_price</h4>
+            <p class="grid__info-description product-description">product_description</p>
+          </div>
+        </div>
+        <div class="grid__item">
+          <div class="grid__img-container">
+            <img class="grid__img" src="/img/pizza.png" alt="">
+          </div>
+          <div class="grid__info">
+            <h3 class="grid__info-title product-title">product_name</h3>
+            <h4 class="grid__info-price product-price">product_price</h4>
+            <p class="grid__info-description product-description">product_description</p>
+          </div>
+        </div>
+        <div class="grid__item">
+          <div class="grid__img-container">
+            <img class="grid__img" src="/img/pizza.png" alt="">
+          </div>
+          <div class="grid__info">
+            <h3 class="grid__info-title product-title">product_name</h3>
+            <h4 class="grid__info-price product-price">product_price</h4>
+            <p class="grid__info-description product-description">product_description</p>
+          </div>
+        </div>
+        <div class="grid__item">
+          <div class="grid__img-container">
+            <img class="grid__img" src="/img/pizza.png" alt="">
+          </div>
+          <div class="grid__info">
+            <h3 class="grid__info-title product-title">product_name</h3>
+            <h4 class="grid__info-price product-price">product_price</h4>
+            <p class="grid__info-description product-description">product_description</p>
+          </div>
+        </div>
+        <div class="grid__item">
+          <div class="grid__img-container">
+            <img class="grid__img" src="/img/pizza.png" alt="">
+          </div>
+          <div class="grid__info">
+            <h3 class="grid__info-title product-title">product_name</h3>
+            <h4 class="grid__info-price product-price">product_price</h4>
+            <p class="grid__info-description product-description">product_description</p>
+          </div>
+        </div>
+        <div class="grid__item">
+          <div class="grid__img-container">
+            <img class="grid__img" src="/img/pizza.png" alt="">
+          </div>
+          <div class="grid__info">
+            <h3 class="grid__info-title product-title">product_name</h3>
+            <h4 class="grid__info-price product-price">product_price</h4>
+            <p class="grid__info-description product-description">product_description</p>
           </div>
         </div>
       </div>
@@ -235,9 +386,9 @@
             <img class="grid__img" src="/img/dessert-pexels.jpg" alt="">
           </div>
           <div class="grid__info">
-            <h3 class="grid__info-title">product_name</h3>
-            <h4 class="grid__info-price">product_price</h4>
-            <p class="grid__info-description">product_description</p>
+            <h3 class="grid__info-title product-title">product_name</h3>
+            <h4 class="grid__info-price product-price">product_price</h4>
+            <p class="grid__info-description product-description">product_description</p>
           </div>
         </div>
       </div>
@@ -247,9 +398,9 @@
             <img class="grid__img" src="/img/ice-cream.jpg" alt="">
           </div>
           <div class="grid__info">
-            <h3 class="grid__info-title">product_name</h3>
-            <h4 class="grid__info-price">product_price</h4>
-            <p class="grid__info-description">product_description</p>
+            <h3 class="grid__info-title product-title">product_name</h3>
+            <h4 class="grid__info-price product-price">product_price</h4>
+            <p class="grid__info-description product-description">product_description</p>
           </div>
         </div>
       </div>
@@ -275,7 +426,12 @@
     <!-- NEWSLETTER SECTION START -->
     <section id="newsletter">
       <div class="newsletter__titles-wrapper">
-        <h3 class="newsletter__title">¡Aprovechá un descuento del <span>25% + Delivery sin cargo</span>!</h3>
+        <h3 class="newsletter__title">Suscribite a nuestro Newsletter</h3>
+        <h3 class="newsletter__title">¡Aprovechá un descuento del
+          <span>25% +
+            Delivery
+            sin cargo</span>!
+        </h3>
         <p class="newsletter__title">Suscribiéndote a nuestro <span>Newsletter</span>, te damos un
           cupon de 25% de descuento en tu primer pedido de CADA MES + ENVIO GRATIS!! Además vas a estar al tanto de
           las ultimas ofertas
@@ -314,6 +470,9 @@
           <input type="submit" id="submit-register-btn" value="¡Suscribirse!">
         </div>
       </form>
+      <!-- <div class="newsletter__promotion-code-container">
+        <p class="newsletter__promotion-code">TASTYFOOD2022</p>
+      </div> -->
     </section>
     <!-- NEWSLETTER SECTION END -->
     <!-- FOOTER SECTION START -->

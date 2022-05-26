@@ -12,7 +12,7 @@ html {
 :root {
 	--header-height: 60px;
 	font-size: 10px;
-	--brand-color: #dd0;
+	--brand-color: #ff0;
 	--navbar-a-links-height: 20px;
 }
 
@@ -21,13 +21,31 @@ body {
 	background-color: #fff;
 }
 
+
 .hidden {
 	display: none !important;
 }
 
+
+/* .show y .hide son transiciones fluidas */
 .show {
 	opacity: 1 !important;
 	visibility: visible !important;
+}
+
+.hide {
+	opacity: 0 !important;
+	visibility: hidden !important;
+}
+
+.transparent-header {
+	background-color: transparent !important;
+	border-bottom: none !important;
+	box-shadow: none !important;
+}
+
+.transparent-header .navbar__desktop-li {
+	border: none !important;
 }
 
 /* Notas:
@@ -69,18 +87,20 @@ Secciones (8):
 /* ============= Header ============== */
 header {
 	position: fixed;
-	z-index: 1000;
 	top: 0;
+	z-index: 1000;
+	width: 100%;
 	background-color: #000;
 	height: var(--header-height);
-	width: 100%;
+	border-bottom: 1px solid #fff;
+	box-shadow: 0 0 10px #fff;
+	transition-property: background-color, border, box-shadow;
+	transition-duration: 0.5s;
 }
 
 .navbar {
 	width: inherit;
 	height: inherit;
-	border-bottom: 1px solid #fff;
-	box-shadow: 0 0 10px #fff;
 }
 
 .navbar__desktop-container {
@@ -186,7 +206,7 @@ header {
 
 /* ========== Hero Section =========== */
 #hero {
-	margin-top: var(--header-height);
+	padding-top: var(--header-height);
 	width: 100%;
 	position: relative;
 	background-image: url("/img/restaurant-hero-pexels.jpg");
@@ -651,7 +671,7 @@ header {
 	font-family: inherit;
 	font-weight: bold;
 	color: #ddd;
-	background-color: rgba(0, 0, 0, 0.5);
+	background-color: rgba(0, 0, 0, 0.8);
 	border-radius: 5px;
 	text-align: center;
 	outline: none;
@@ -662,8 +682,7 @@ header {
 }
 
 .menu__selector select:hover {
-	background-color: rgba(0, 0, 0, 0.7);
-	color: #eee;
+	background-color: rgba(0, 0, 0, 1);
 }
 
 .menu__selector select:active {
@@ -935,6 +954,10 @@ header {
 	margin-right: 5px;
 }
 
+.form__submit {
+	transition: all 0.3s !important;
+}
+
 #submit-register-btn {
 	margin-top: 5vw;
 	padding: 10px;
@@ -947,14 +970,32 @@ header {
 	font-family: inherit;
 	font-weight: bold;
 	cursor: pointer;
-
-	transition: all 0.3s;
 }
 
 #submit-register-btn:hover {
 	color: #000;
 	background-color: var(--brand-color);
 }
+
+.form__coupon {
+	transition: all 0.3s !important;
+	margin: 5% auto;
+}
+
+.form__coupon-text {
+	color: #fff;
+	font-size: clamp(20px, 6vw, 40px);
+	font-weight: bold;
+	padding: 5px;
+	text-align: center;
+	line-height: 1.5;
+}
+
+.form__coupon-text span {
+	color: var(--brand-color);
+	letter-spacing: 1px;
+}
+
 
 /* ========= Footer Section ========== */
 #footer {
@@ -1033,6 +1074,11 @@ header {
 	display: none;
 }
 
+#footer .tastyfood-logo {
+	text-align: center;
+	margin: 5% auto 0;
+}
+
 .footer__owner-p {
 	color: #aaa;
 	text-align: center;
@@ -1053,9 +1099,9 @@ header {
 	color: #222;
 
 	position: fixed;
-	top: var(--header-height);
+	top: 0;
 	left: 0%;
-	z-index: 100;
+	z-index: 1100;
 
 	animation: smoothShow 0.3s;
 }
@@ -1176,10 +1222,10 @@ header {
 
 	#about-us {
 		position: fixed;
-		top: var(--header-height);
+		top: 0;
 		left: 0;
 		width: 58%;
-		height: calc(100% - var(--header-height));
+		height: 100vh;
 	}
 
 	/* ========= Footer Section ========== */
@@ -1192,6 +1238,32 @@ header {
 		display: block;
 		margin-bottom: 10px;
 	}
+
+	/* ======== Footer Section ========= */
+	#footer .tastyfood-logo {
+		text-align: center;
+		margin: 3% auto 0;
+	}
+
+	.social-links {
+		margin: 0;
+	}
+
+	.footer__menus {
+		width: 100%;
+		display: flex;
+		max-width: 800px;
+		margin: 0 auto;
+	}
+
+	.footer-menu {
+		width: 50%;
+	}
+
+	.footer-menu__items {
+		flex-direction: column;
+		align-items: center;
+	}
 }
 
 @media screen and (min-width: 700px) {
@@ -1199,10 +1271,10 @@ header {
 	/* ========= Header Section ========== */
 	#about-us {
 		position: fixed;
-		top: var(--header-height);
+		top: 0;
 		left: 0;
 		width: 400px;
-		height: calc(100% - var(--header-height));
+		height: 100vh;
 	}
 
 	.about-us__img {
@@ -1597,7 +1669,7 @@ header {
 
 	/* Items cuyo <p> esté después de un determinado icono (camión) */
 	.why-us__item-description:not(.fa-truck-fast~p) {
-		font-size: 0.9vw;
+		font-size: 1.8vw;
 	}
 
 	/* ========== Menu Section =========== */
@@ -1761,6 +1833,10 @@ header {
 		font-size: 0.8vw;
 	}
 
+	.why-us__item-description:not(.fa-truck-fast~p) {
+		font-size: max(0.9vw, 10px);
+	}
+
 
 	/* ========== Menu Section =========== */
 
@@ -1867,10 +1943,38 @@ header {
 	.newsletter__title:nth-child(4) {
 		font-size: 4vw;
 	}
+
+
+	.form__coupon-text {
+		font-size: clamp(30px, 3vw, 40px);
+
+	}
+
+	/* ======== Footer Section ========= */
+	#footer .tastyfood-logo {
+		text-align: center;
+		margin: 2% auto 0;
+	}
+
+	.footer-menu {
+		flex-wrap: wrap;
+	}
+
+	.footer-menu__items {
+		width: 100%;
+	}
+
+	.footer-menu__item a {
+		font-size: min(20px, 3vw);
+	}
 }
 
 
 @media screen and (min-width: 1300px) {
+	body {
+		max-width: 1920px;
+		margin: auto;
+	}
 
 	/* ============= Header ============== */
 	.navbar__desktop-li a[href="#newsletter"] {

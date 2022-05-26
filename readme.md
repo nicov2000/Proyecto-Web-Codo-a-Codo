@@ -28,7 +28,7 @@ Para la estructura de la web se eligió el modelo **One Page**, con 8 secciones.
 
 ## Enlace
 
-Click en el enlace para ver el sitio: [name](link "Web Restaurante")
+Click en el enlace para ver el sitio: https://nicov2000.github.io/
 
 ---
 

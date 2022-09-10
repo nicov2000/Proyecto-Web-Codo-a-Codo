@@ -209,7 +209,7 @@ header {
 	padding-top: var(--header-height);
 	width: 100%;
 	position: relative;
-	background-image: url("/img/tastyfood_restaurant_hero.jpg");
+	background-image: url("./img/tastyfood_restaurant_hero.jpg");
 	background-position: center;
 	background-size: cover;
 	background-attachment: fixed;
@@ -619,7 +619,7 @@ header {
 #menu {
 	width: 100%;
 	min-height: 700px;
-	background-image: url("/img/tastyfood_restaurant_kitchen_ingredients.jpg");
+	background-image: url("./img/tastyfood_restaurant_kitchen_ingredients.jpg");
 	background-position: left;
 	background-size: cover;
 
@@ -838,7 +838,7 @@ header {
 	flex-direction: column;
 	align-items: center;
 	justify-content: space-around;
-	background-image: url("/img/tastyfood_restaurant_kitchen_ingredients.jpg");
+	background-image: url("./img/tastyfood_restaurant_kitchen_ingredients.jpg");
 	background-size: cover;
 	background-position: left;
 }
@@ -1674,7 +1674,7 @@ header {
 
 	/* ========== Menu Section =========== */
 	#menu {
-		background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/img/tastyfood_restaurant_kitchen_ingredients.jpg");
+		background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("./img/tastyfood_restaurant_kitchen_ingredients.jpg");
 	}
 
 	.menu__title {
@@ -1728,7 +1728,7 @@ header {
 
 	/* ======= Newsletter Section ======== */
 	#newsletter {
-		background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("/img/tastyfood_restaurant_kitchen_ingredients.jpg");
+		background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("./img/tastyfood_restaurant_kitchen_ingredients.jpg");
 
 		align-items: initial;
 	}

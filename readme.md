@@ -4,6 +4,10 @@ Link: https://tastyfood-restaurant-proyect.netlify.app/
 
 ---
 
+![Website Preview](./img/tastyfood_restaurant_preview.jpg)
+
+---
+
 ## Tecnologías utilizadas
 
 - HTML5

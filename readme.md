@@ -30,6 +30,8 @@ Como el objetivo es conseguir el pedido del cliente, existen varios botones Call
 
 Si el cliente no hace click en el boton de la primer seccion pero sigue bastante interesado como para explorar la pagina, va a seguir leyendo, y los contenidos presentes van a cumplir el rol de generar el momentum para que el cliente "tenga más ganas" de ordenar. Al llegar a la ultima sección de la pagina, se va a encontrar con el newsletter, donde podrá recibir un descuento + Free Delivery si decide suscribirse. De esta forma podremos obtener su email para el posterior email marketing.
 
+---
+
 ## Diseño
 
 Para la estructura del proyecto se eligió el modelo **Single Page Application**, con 8 secciones. Es un template **mobile-first** **responsive** creado desde 0, sin usar frameworks de CSS.

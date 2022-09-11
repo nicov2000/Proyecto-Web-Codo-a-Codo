@@ -1,4 +1,13 @@
-# Web Restaurante - Proyecto Codo a Codo 4.0
+
+## Web Restaurante - Proyecto Codo a Codo 4.0
+
+Click en el enlace para ver el sitio: https://tastyfood-restaurant-proyect.netlify.app/
+
+---
+
+## Autor
+
+_- Nicolas Vargas
 
 ## Propósito de la web
 
@@ -23,15 +32,3 @@ Para la estructura de la web se eligió el modelo **One Page**, con 8 secciones.
 - HTML5
 - CSS3
 - Javascript
-
----
-
-## Enlace
-
-Click en el enlace para ver el sitio: https://nicov2000.github.io/
-
----
-
-## Autor
-
-_- Nicolas Vargas (Comision Python 22078, prof Juan Cardone)_
